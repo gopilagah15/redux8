@@ -1,4 +1,4 @@
-import { put, take, takeEvery } from "redux-saga/effects";
+import { put,  takeEvery } from "redux-saga/effects";
 import { PRODUCT_LIST, SEARCH_PRODUCT, SET_PRODUCT_LIST } from "./constant";
 
 function* getProducts(){

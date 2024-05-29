@@ -1,11 +1,15 @@
-import {PRODUCT_LIST } from "./constant";
+import {PRODUCT_LIST, SEARCH_PRODUCT } from "./constant";
 
-export const productList =async()=>{
-    let data = await fetch('https');
-    data = await data.json();
-    console.log('action productList called', data);
+export const productList =()=>{ 
+    
     return {
-        type:PRODUCT_LIST,
-        data
+        type:PRODUCT_LIST, 
+    }
+} 
+export const productSearch =(query)=>{ 
+    
+    return {
+        type:SEARCH_PRODUCT, 
+        query
     }
 } 

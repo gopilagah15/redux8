@@ -14,8 +14,8 @@ export const removeToCart =(data)=>{
         data
     }
 } 
-export const emptyCart =(data)=>{
-    console.log('action emptyCart called', data);
+export const emptyCart =()=>{
+    console.log('action emptyCart called');
     return {
         type:EMPTY_CART, 
     }
