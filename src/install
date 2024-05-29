@@ -1,3 +1,5 @@
  json-server --watch db.json --port 3500
 
-npm i react redux redux-saga react-router-dom@reduxjs/toolkit
+npm i react-redux redux-saga react-router-dom @reduxjs/toolkit
+
+ghg
