@@ -6,15 +6,15 @@ export const cartData = (data=[],action)=>{
             console.log('ADD_TO_CART condition called',action)
             return [action.data, ...data]
         case REMOVE_FROM_CART:
-            console.log('REMOVE_FROM_CART condition called');
-            data.length = data.length? data.length-1:[];
+            console.log('REMOVE_FROM_CART condition called',action);
+            data.length = data.length? data.length-1:[]
             return [...data]
         case EMPTY_CART:
-            console.log('EMPTY_CART condition called');
-            data.length = 0;
+            console.log('EMPTY_CART condition called',action);
+            data=[];
             return [...data]
         default:
-            return []
+            return data
     }
       
 } 
