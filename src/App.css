@@ -1,25 +1,29 @@
 .App {
   text-align: center;
+  background: #371417
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  
 }
 .logo {
   float: left;
   margin: 0;
   padding: 20px;
+  color: white;
 }
 /* header style */
 .header{
-  background-color: orange;
-  height: 100px;
+  background-color: red;
+  height: 1020px;
 }
 .cart-div{
   float: right;
   margin: 30px;
   position: relative;
+ 
 }
 .cart-div img{
   width: 30px;
@@ -41,11 +45,14 @@
 .product-container{
     display: flex;
     flex-wrap: wrap;
+    
 }
 .product-item{
   border: 1px solid #ccc;
   padding: 20px;
     margin: 20px;
+    border: 2px solid white;
+   
 }
 /* end product Ui style */
 
@@ -54,18 +61,24 @@
   display: flex;
   margin-left: 30px;
   margin-right: 30px;
+  color: white;
+  
 }
 .cart-page-container table{
   flex: 65%;
     border-collapse: collapse;
+    
+    
 }
 .cart-page-container table td{
   border: 1px solid #ccc;
   padding: 15px;
+  color: white;
 }
 .price-details{
   flex: 35%;
   margin: 0px 30px;
+  color: white;
 }
 .price-details .adjust-price{
   display: flex;
@@ -73,6 +86,7 @@
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
+    
 }
 .price-details .adjust-price span{
   font-size: 20px;
@@ -94,13 +108,15 @@
   }
 }
 .header{
-  background: orange;
+  background: #790912;
+
   height: 100px;
 }
 .cart-div{
   float: right;
   margin: 30px;
   position: relative;
+  
 }
 .cart-div img{
   width: 30px;
@@ -114,6 +130,7 @@
   top: -10px;
   right: 0px;
   color: white; 
+  
 }
 .App-header {
   background-color: #282c34;
@@ -129,12 +146,39 @@
 .product-container{
   display: flex;
   flex-wrap: wrap;
+  
+ 
 }
 .product-item{
   border: 1px solid black;
   padding: 20px;
   margin: 20px;
+  scale: 1;
+  opacity: .9;
+  color: white;
 }
+.product-item:hover{
+  border: 1px solid black;
+  padding: 20px;
+  color: white;
+  margin: 20px;
+  outline: 2px solid white;
+  scale: 1.01;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+  opacity: 5;
+}
+@keyframes myAnim {
+	0% {
+		background-position: right bottom;
+		background-size: 100%;
+	}
+
+	100% {
+		background-position: right bottom;
+		background-size: 150%;
+	}
+
+ }
 .App-link {
   color: #61dafb;
 }
